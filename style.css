@@ -1,0 +1,109 @@
+:root {
+    --Purple: hsl(259, 100%, 65%);
+    --Light-red: hsl(0, 100%, 67%);
+    --White: hsl(0, 0%, 100%);
+    --Off-white: hsl(0, 0%, 94%);
+    --Light-grey: hsl(0, 0%, 86%);
+    --Smokey-grey: hsl(0, 1%, 44%);
+    --Off-black: hsl(0, 0%, 8%);
+}
+
+.poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    border-radius: 24px 24px 100px 24px;
+}
+
+.error {
+    display: none;
+}
+
+input[type="date"] {
+    padding: 10px;
+    cursor: default;
+    align-items: center;
+    display: inline-flex;
+    overflow: hidden;
+    width: 495px;
+    height: 120px;
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+
+input[type="date"]:focus {
+    outline: none;
+}
+
+.alert::-webkit-datetime-edit-month-field,
+.alert::-webkit-datetime-edit-day-field,
+.alert::-webkit-datetime-edit-year-field {
+    border: 1px solid var(--Light-red);
+}
+
+
+::-webkit-datetime-edit-month-field,
+::-webkit-datetime-edit-day-field,
+::-webkit-datetime-edit-year-field {
+    border: 1px solid var(--Light-grey);
+    border-radius: 8px;
+    padding-right: 60px;
+    padding-left: 20px;
+    padding: 1px 60px 1px 20px;
+
+
+
+}
+
+::-webkit-datetime-edit-month-field:focus,
+::-webkit-datetime-edit-day-field:focus,
+::-webkit-datetime-edit-year-field:focus {
+    background-color: var(--White);
+    color: var(--Off-black);
+    border: 1px solid var(--Purple);
+
+}
+
+
+
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+}
+
+::-webkit-datetime-edit-text {
+    opacity: 0;
+}
+
+#result {
+    transition: color 0.5s ease, transform 0.5s ease-in-out;
+}
+
+#result.highlight {
+    transform: scale(1.1);
+}
+
+@media screen and (max-width:767px) {
+    input[type="date" i] {
+        font-size: 24px;
+    }
+
+    input[type="date"] {
+        width: 300px;
+        height: 100px;
+    }
+
+    ::-webkit-datetime-edit-month-field,
+    ::-webkit-datetime-edit-day-field,
+    ::-webkit-datetime-edit-year-field {
+        border: 1px solid var(--Light-grey);
+        border-radius: 8px;
+        padding-right: 24px;
+        padding-left: 10px;
+        padding: 1px 24px 1px 10px;
+
+    }
+
+}

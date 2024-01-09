@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./style.css">
+  <!-- Primary Meta Tags -->
+  <title>Manju Bhaskar - Frontend Mentor | Todo app</title>
+  <script src="https://cdn.jsdelivr.net/npm/countup.js"></script>
+  <meta name="title" content="Manju Bhaskar - Frontend Mentor | Age calculator app">
+  <meta name="description" content="Count the moments that shape your journey">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://manjubhaskar02.github.io/FM-13-Todo-app/">
+  <meta property="og:title" content="Frontend Mentor | Age calculator app">
+  <meta property="og:description" content="Count the moments that shape your journey ">
+  <meta property="og:image" content="https://manjubhaskar02.github.io/FM-13-Todo-app/images/age-calculator.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://manjubhaskar02.github.io/FM-13-Todo-app/">
+  <meta property="twitter:title" content="Frontend Mentor | Age calculator app">
+  <meta property="twitter:description" content="Count the moments that shape your journey ">
+  <meta property="twitter:image" content="https://manjubhaskar02.github.io/FM-13-Todo-app/images/age-calculator.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body class="grid poppins place-items-center h-screen bg-[--Off-white] p-5">
+  <section class="container  bg-white  px-4 py-10 md:px-10 md:w-3/4 xl:w-1/2">
+    <div class="relative text-[--Smokey-grey]">
+      <label
+        class="date absolute text-xs md:text-sm tracking-widest  flex gap-[53px] md:gap-28  top-2.5  left-3 font-normal"
+        for="birthdate">
+        <span>DAY</span>
+        <span>MONTH</span>
+        <span>YEAR</span>
+      </label>
+      <input type="date" id="birthdate">
+      <div
+        class="error  text-[6px] md:text-xs text-[var(--Light-red)] flex gap-8 italic lg:gap-12  absolute bottom-4 left-3 md:bottom-2">
+      </div>
+    </div>
+    <button class="relative w-full py-4" onclick="calculateAge()">
+      <div class="m-3 md:mt-8  bg-[--Light-grey] h-px "></div>
+      <img
+        class="absolute inset-0  lg:start-[91%] m-auto bg-[var(--Purple)] hover:bg-[var(--Off-black)] focus:bg-[var(--Off-black)] active:bg-[var(--Off-black)] rounded-full p-4 size-14 lg:size-20 "
+        src="assets/images/icon-arrow.svg" alt="arrow">
+    </button>
+    <p class="grid place-items-start px-3 pt-10 italic font-bold text-5xl md:text-7xl gap-3  " id="result">
+      <span class="text-[var(--Purple)]"> -- <span class="text-[var(--Off-black)]">years</span>
+      </span>
+      <span class="text-[var(--Purple)]"> -- <span class="text-[var(--Off-black)]">months</span>
+      </span>
+      <span class="text-[var(--Purple)]"> -- <span class="text-[var(--Off-black)]">days</span>
+      </span>
+    </p>
+    <div id="dummy"></div>
+  </section>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Manju Bhaskar</a>.
+    </div>
+  </footer>
+  <script src="./javascript.js"></script>
+</body>
+
+</html>
